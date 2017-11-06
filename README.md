@@ -8,7 +8,7 @@ Go to 0x100000 in a final Sonic 3D Blast ROM.
 
 ![alt text](https://i.imgur.com/tvfPvtn.png)
 
-This is a table of entries for the compressed data for each of Sonic's frames. Pick an entry from the list, ignoring the first byte (this is information you don't need), and go to that address. I'll be using the first entry at 0x4D0 for example purposes.
+This is a table of entries for the compressed data for each of Sonic's frames. Pick an entry from the list, ignoring the first byte (this is information you don't need), and go to that address + 0x100000. I'll be using the first entry at 0x4D0 for example purposes.
 
 At that address, look three bytes back, and add that value to the original address. This will take you to the beginning of the compressed data for a frame.
 
